@@ -1,0 +1,37 @@
+{
+  "name": "jel-twitch-chat",
+  "version": "0.0.1",
+  "description": "Programa para recibir los mensajes de un chat de Twitch y mostrarlos en OBS a traves del navegador",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack --mode production",
+    "start": "webpack && qode ./dist/index.js",
+    "debug": "webpack && qode --inspect ./dist/index.js"
+  },
+  "author": "Alfonso Saavedra \"Son Link\"",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@kararty/dank-twitch-irc": "^6.0.0",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@nodegui/packer": "^1.5.0",
+    "babel-loader": "^9.1.2",
+    "bufferutil": "^4.0.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "native-addon-loader": "^2.0.1",
+    "style-loader": "^3.3.2",
+    "utf-8-validate": "^5.0.10",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-hot-middleware": "^2.25.3",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
